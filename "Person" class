@@ -1,0 +1,55 @@
+write a "person" class to hold all the deatils
+
+class person {
+    constructor (name, age, gender, address, email, phone_number) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.address = address;
+        this.email = email;
+        this.phone_number = phone_number;
+    }
+    getName(){
+        return this.name;
+    }
+    getAge(){
+        return this.age;
+    }
+    getGender(){
+        return this.gender;
+    }
+    getAddress(){
+        return this.address;
+    }
+    getEmail(){
+        return this.email;
+    }
+    getPhoneNumber(){
+        return this.phone_number;
+    }
+    setName(name){
+        this.name = name;        
+    }
+    setAge(age){
+        this.age = age;
+    }
+    setGender(gender){
+        this.gender = gender;
+    }
+    setAddress(address){
+        this.address = address;
+    }
+    setEmail(email){
+        this.email = email;
+    }
+    setPhoneNumber(phone_number){
+        this.phone_number = phone_number;
+    }
+}
+
+
+
+// const person1 = new Person("Gold", 25, "Male", "Coimbatore", "parvathythangam1402@gmail.com", "9600704401");
+// console.log(person1.getName()); // Output: John Doe
+// person1.setAge(26);
+// console.log(person1.getAge()); // Output: 26
