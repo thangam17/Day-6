@@ -1,55 +1,64 @@
 write a "person" class to hold all the deatils
 
 class person {
-    constructor (name, age, gender, address, email, phone_number) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.address = address;
-        this.email = email;
-        this.phone_number = phone_number;
+    constructor(name, age, gender, email, mobile_number, city, country) {
+      this.name = name
+      this.age = age
+      this.gender = gender
+      this.email = email
+      this.mobile_number = mobile_number
+      this.city = city
+      this.country = country
     }
-    getName(){
-        return this.name;
+    getName() {
+      return this.name
     }
-    getAge(){
-        return this.age;
+    getAge() {
+      return this.age
     }
-    getGender(){
-        return this.gender;
+    getGender() {
+      return this.gender
     }
-    getAddress(){
-        return this.address;
+    getEmail() {
+      return this.email
     }
-    getEmail(){
-        return this.email;
+    getMobileNumber() {
+      return this.mobile_number
     }
-    getPhoneNumber(){
-        return this.phone_number;
+    getCity() {
+      return this.city
     }
-    setName(name){
-        this.name = name;        
+    getCountry() {
+      return this.country
     }
-    setAge(age){
-        this.age = age;
+    setName(name) {
+      this.name = name
     }
-    setGender(gender){
-        this.gender = gender;
+    setAge(age) {
+      this.age = age
     }
-    setAddress(address){
-        this.address = address;
+    setGender(gender) {
+      this.gender = gender
     }
-    setEmail(email){
-        this.email = email;
+    setEmail(email) {
+      this.email = email
     }
-    setPhoneNumber(phone_number){
-        this.phone_number = phone_number;
+    setMobileNumber(mobile_number) {
+      this.mobile_number = mobile_number
     }
-}
-
-
-
-// const person1 = new Person("Gold", 25, "Male", "Coimbatore", "parvathythangam1402@gmail.com", "9600704401");
-// console.log(person1.getName()); // Output: John Doe
-// person1.setAge(26);
-// console.log(person1.getAge()); // Output: 26
+    setCity(city) {
+      this.city = city
+    }
+    setCountry(country) {
+      this.country = country
+    }
+  }
+  
+  const person1 = new person("Gold",27,"male","Parvathythangam1402@gmail.com",9600704401,"Coimbatore","INDIA")
+  const person2 = new person("paru",22,"female","paru@gmail.com",8098982615,"Karur","INDIA")
+  console.log(person2.getName()) // "paru"
+  console.log(person1.getCity()) //"Coimbatore"
+person2.setCity("OOTY")
+console.log(person2.getCity())  //"OOTY"
+person1.setName("Thangam")
+console.log(person1.getName())  //"Thangam"
